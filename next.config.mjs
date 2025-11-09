@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',  // 👈 添加这一行，启用静态导出
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -10,5 +11,6 @@ const nextConfig = {
     unoptimized: true,
   },
 }
+
 
 export default nextConfig
